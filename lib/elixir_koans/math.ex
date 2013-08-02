@@ -25,7 +25,6 @@ defmodule ElixirKoans.Math do
   end
 
   def newton_sqrt_alt(x, guess, tol) do
-    #if good_enough?(x, guess, tol) do
     precision = fn(x, guess, tol) ->
       cond do
         abs(square(guess) - x ) <= tol ->
