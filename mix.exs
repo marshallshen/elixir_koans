@@ -8,7 +8,7 @@ defmodule ElixirKoans.Mixfile do
       compilers: [:elixir, :dynamo, :app],
       env: [prod: [compile_path: "ebin"]],
       compile_path: "tmp/#{Mix.env}/elixir_koans/ebin",
-      deps: deps ]
+      deps: deps()]
   end
 
   # Configuration for the OTP application
@@ -19,6 +19,6 @@ defmodule ElixirKoans.Mixfile do
 
   defp deps do
     [ { :cowboy, github: "extend/cowboy" },
-      { :dynamo, "0.1.0.dev", github: "elixir-lang/dynamo" } ]
+      { :dynamo, "0.1.0.dev", github: "dynamo/dynamo" } ]
   end
 end
